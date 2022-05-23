@@ -1,4 +1,7 @@
+import { Link } from "react-router-dom";
+
 import classes from "./QuoteItem.module.css";
+import QuoteList from "./QuoteList";
 
 const QuoteItem = (props) => {
   return (
@@ -9,7 +12,10 @@ const QuoteItem = (props) => {
         </blockquote>
         <figcaption>{props.author}</figcaption>
       </figure>
-      <a className="btn">View Fullscreen</a>
+      {/* dynamic value 넣어주기  QuoteList */}
+      <Link className="btn" to={`/quotes/${props.id}`}>
+        View Fullscreen
+      </Link>
     </li>
   );
 };
