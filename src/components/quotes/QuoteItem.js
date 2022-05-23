@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 
 import classes from "./QuoteItem.module.css";
-import QuoteList from "./QuoteList";
 
 const QuoteItem = (props) => {
   return (
